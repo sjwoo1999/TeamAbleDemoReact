@@ -1,0 +1,117 @@
+/* 메인 컨테이너 */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #F8E8EE, #E3F2FD);
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 제목 스타일 */
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem; /* 제목과 질문 사이 간격 증가 */
+}
+
+/* 질문 박스 */
+.question-box {
+    background: #fff;
+    padding: 1.8rem; /* 패딩 증가하여 버튼과 여백 확보 */
+    border-radius: 12px;
+    margin-bottom: 2.2rem; /* 버튼과의 간격 추가 */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.8; /* 줄 간격 증가 */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* 선택지 컨테이너 */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 18px; /* 버튼 간격 증가 */
+    margin-top: 0.5rem; /* 질문과 버튼 사이 간격 증가 */
+    margin-bottom: 2.2rem; /* 질문과 버튼 사이 간격 추가 */
+}
+
+/* 1~5 선택 버튼 */
+.option-button {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #f8f9fa;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+/* 선택된 버튼 */
+.option-button.selected {
+    background: #6FCF97;
+    color: white;
+    border-color: #56C58B;
+    transform: scale(1.1); /* 클릭 시 크기 살짝 확대 */
+}
+
+/* 버튼 호버 효과 */
+.option-button:hover {
+    background: #E0E0E0;
+    border-color: #bbb;
+}
+
+/* 버튼 컨테이너 */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px; /* 버튼 간격 증가 */
+    margin-top: 2.5rem; /* 버튼과 질문 간격 증가 */
+}
+
+/* 랜덤 선택 & 다음 버튼 */
+.random-button, .next-button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 랜덤 버튼 */
+.random-button {
+    background: #FFCC66;
+}
+
+.random-button:hover {
+    background: #FFB74D;
+}
+
+/* 다음 버튼 */
+.next-button {
+    background: #6FCF97;
+}
+
+.next-button:hover {
+    background: #56C58B;
+}
+
+/* 오류 메시지 */
+.error-message {
+    color: #E74C3C;
+    font-size: 13px;
+    margin-top: 10px;
+}

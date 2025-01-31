@@ -1,0 +1,177 @@
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #F8E8EE, #E3F2FD);
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* 제목 스타일 */
+.result-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem; /* 제목과 내용 사이 여백 증가 */
+}
+
+/* 성격 유형 박스 */
+.personality-box {
+    background: #fff;
+    padding: 1.8rem; /* 패딩 증가 */
+    border-radius: 12px;
+    margin-top: 1.2rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.8; /* 줄 간격 증가 */
+}
+
+/* 유형 제목 */
+.personality-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.8rem;
+}
+
+/* 유형 설명 */
+.personality-description {
+    font-size: 1rem;
+    line-height: 1.8; /* 줄 간격 증가 */
+    text-align: justify; /* 본문 양쪽 정렬 */
+    color: #666;
+    padding: 0 1rem;
+}
+
+/* 차트 컨테이너 */
+.chart-container {
+    width: 100%;
+    margin-top: 1.5rem; /* 차트와 설명 사이 여백 증가 */
+}
+
+/* 개별 항목 행 */
+.trait-row {
+    display: flex;
+    align-items: center;
+    margin: 12px 0; /* 항목 간 간격 증가 */
+}
+
+/* 성향 라벨 */
+.trait-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 12px;
+    text-align: center;
+}
+
+/* 왼쪽 (L, C, T, E) */
+.left-label {
+    color: #2E86C1;
+    min-width: 30px;
+}
+
+/* 오른쪽 (U, I, A, P) */
+.right-label {
+    color: #8E44AD;
+    min-width: 30px;
+}
+
+/* 진행 바 */
+.progress-bar {
+    flex: 1;
+    height: 24px; /* 높이 증가 */
+    background: #f1f1f1;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* 차트 내부 텍스트 */
+.progress-segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem; /* 가독성 개선 */
+    font-weight: bold;
+    color: white;
+}
+
+/* 왼쪽 색상 (L, C, T, E) */
+.left {
+    background: #5DADE2;
+}
+
+/* 오른쪽 색상 (U, I, A, P) */
+.right {
+    background: #A569BD;
+}
+
+/* 궁합 영역 */
+.match-container {
+    text-align: center;
+    margin-top: 1.8rem; /* 여백 증가 */
+}
+
+/* 궁합 제목 */
+.match-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+/* 궁합 태그 */
+.match-tags {
+    display: flex;
+    justify-content: center;
+    gap: 12px; /* 태그 간격 증가 */
+    flex-wrap: wrap;
+}
+
+/* 태그 스타일 */
+.match-tag {
+    padding: 8px 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* 잘 맞는 유형 */
+.best-tag {
+    background: #FFCC66;
+    color: #6D4C41;
+}
+
+/* 잘 맞지 않는 유형 */
+.avoid-tag {
+    background: #FF6666;
+    color: #B71C1C;
+}
+
+/* 버튼 컨테이너 */
+.button-container {
+    margin-top: 2rem; /* 버튼과 차트 간 여백 증가 */
+}
+
+/* 다시 하기 버튼 */
+.restart-button {
+    background: #6FCF97;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px; /* 패딩 증가 */
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 버튼 호버 */
+.restart-button:hover {
+    background: #56C58B;
+}
